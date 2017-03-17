@@ -1,0 +1,85 @@
+body, html, #wrapper, #sidebar, #main-content{
+  height: 100%;
+}
+body{
+  line-height: 2;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+#wrapper{
+
+}
+#sidebar{
+  background: #2c3e50;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+#sidebar nav{
+  display: flex;
+  flex-flow: column;
+}
+#sidebar nav a{
+  padding: 20px;
+  text-align: left;
+  color: #ccc;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+#main-content{
+  position: relative;
+  margin-left: 300px;
+}
+#menu-display{
+  color: #d35400;
+}
+#menu-display > h1{
+  padding: 0 20px;
+  font-size: 60px;
+  text-transform: capitalize;
+}
+#menu-display .menu-items{
+  padding: 50px;
+}
+#menu-display .menu-items .menu-item{
+  margin: 50px 0;
+  color: #555;
+}
+#menu-display .menu-items .menu-item h3{
+  color: #d35400;
+}
+#drinks-menu{
+  display: flex;
+  width: 100%;
+  flex-flow: row wrap;
+}
+#drinks-menu a{
+  flex: 0 0 50%;
+  text-align: center;
+  margin: 20px 0;
+  color: #d35400;
+}
+#drinks-menu a:last-child{
+  flex: 1;
+}
+#drinks-menu a span{
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 3px solid #999;
+  min-width: 200px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#drinks-menu a:last-child span{
+  display: block;
+}
